@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "nohup /opt/bin/entry_point.sh & ./node_modules/.bin/wdio ./test/wdio.conf.js"
+    "start": "nohup /opt/bin/entry_point.sh & ./node_modules/.bin/wdio ./test/wdio.conf.js"
   },
   "repository": {
     "type": "git",
