@@ -9,4 +9,4 @@ deployment:
     branch: master
     commands:
       - docker login -u $DOCKER_USER -p $DOCKER_PASS -e $DOCKER_EMAIL
-      - docker push gr4per/ocbesbn-selenium
+      - docker push ocbesbn/selenium
