@@ -1,4 +1,4 @@
-FROM selenium/standalone-chrome
+FROM selenium/standalone-chrome:latest
 MAINTAINER gr4per
 
 WORKDIR /home/seluser
@@ -9,4 +9,4 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs build-essential
 RUN npm install
 
-CMD [ "npm", "run test" ]
+CMD [ "npm", "start" ]

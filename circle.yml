@@ -4,8 +4,13 @@ machine:
   services:
     - docker
 
+  ruby:
+    version:
+      1.8.7-p358-falcon-perf
+
 dependencies:
   override:
+    - gem install jsduck
     - docker info
     - docker build --rm=false -t ocbesbn/selenium .
 

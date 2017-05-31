@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "nohup /opt/bin/entry_point.sh & ./node_modules/.bin/wdio ./test/wdio.conf.js"
+    "start": "nohup /opt/bin/entry_point.sh & ./node_modules/.bin/wdio ./test/wdio.conf.js",
+    "docsgen": "jsduck --output docs"
   },
   "repository": {
     "type": "git",
@@ -15,11 +16,10 @@
   },
   "license": "jCatalog",
   "readme": "README.md",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "mocha": "3.1.2",
     "chai": "3.5.0",
+    "mocha": "3.1.2",
     "mocha-junit-reporter": "^1.12.1",
     "wdio-mocha-framework": "^0.5.8",
     "wdio-selenium-standalone-service": "0.0.7",
