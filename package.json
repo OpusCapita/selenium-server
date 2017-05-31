@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "start": "nohup /opt/bin/entry_point.sh & ./node_modules/.bin/wdio ./test/wdio.conf.js",
-    "docsgen": "jsduck --output docs"
+    "docsgen": "jsduck --output docs",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
