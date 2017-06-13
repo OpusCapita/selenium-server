@@ -17,8 +17,7 @@
   },
   "license": "jCatalog",
   "readme": "README.md",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "chai": "3.5.0",
     "mocha": "3.1.2",
     "mocha-junit-reporter": "^1.12.1",
@@ -27,6 +26,7 @@
     "wdio-mocha-framework": "^0.5.8",
     "wdio-selenium-standalone-service": "0.0.7",
     "wdio-spec-reporter": "^0.1.0",
+    "wdio-junit-reporter": "^0.3.0",
     "webdriverio": "4.6.2"
   }
 }
