@@ -1,4 +1,4 @@
-FROM selenium/standalone-chrome:latest
+FROM selenium/standalone-firefox:3.4.0-dysprosium
 MAINTAINER gr4per
 
 WORKDIR /home/seluser
@@ -9,5 +9,6 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs build-essential
 RUN sudo npm install -g nodemon
 RUN npm install
+COPY startup.sh startup.sh
 
-CMD [ "npm", "start" ]
+CMD [ "bash", "startup.sh" ]
