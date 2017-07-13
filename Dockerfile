@@ -9,6 +9,7 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs build-essential
 RUN sudo npm install -g nodemon
 RUN npm install
+RUN mkdir result
 COPY startup.sh startup.sh
 
 CMD [ "bash", "startup.sh" ]
