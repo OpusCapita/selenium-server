@@ -12,4 +12,4 @@ RUN npm install
 RUN mkdir result
 COPY startup.sh startup.sh
 
-CMD [ "bash", "startup.sh" ]
+ENTRYPOINT [ "bash", "startup.sh" ]

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "./node_modules/.bin/wdio /test/wdio.conf.js",
     "docsgen": "jsduck --output docs",
     "test": "echo \"Error: no test specified\" && exit 0"
   },

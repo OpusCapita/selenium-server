@@ -6,4 +6,4 @@ echo Waiting for Selenium Server
 sleep 5
 echo Starting WebDriver
 export NODE_PATH='$(NODE_PATH):/home/seluser/node_modules/'
-npm start
+./node_modules/.bin/wdio /test/wdio.conf.js $@
